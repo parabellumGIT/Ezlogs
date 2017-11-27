@@ -10,17 +10,15 @@ import UIKit
 
 class MainViewController: UITableViewController {
     var pagingControll: PagingControl?
+    private var headerHeight:CGFloat = 40
     weak var pageVC:PageViewController?
     @IBOutlet weak var container: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.sectionHeaderHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 400
-        
-      
-
+       
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -38,7 +36,7 @@ class MainViewController: UITableViewController {
         case 0:
             return UITableViewAutomaticDimension
         case 1:
-            return self.view.frame.size.height - 64 - 50 - 40
+            return self.view.frame.size.height - self.navigationController!.navigationBar.frame.size.height - UIApplication.shared.statusBarFrame.height - 50 - headerHeight
         default:
             return 0
         }
@@ -47,7 +45,7 @@ class MainViewController: UITableViewController {
         switch section {
         case 0:
             return 0
-        case 1: return 40
+        case 1: return headerHeight
         default:
             return 0
         }
@@ -57,7 +55,7 @@ class MainViewController: UITableViewController {
         case 0:
             return nil
         case 1:
-            pagingControll = PagingControl(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.size.width, height: 40))
+            pagingControll = PagingControl(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.size.width, height: headerHeight))
             return pagingControll
         default:
             return nil

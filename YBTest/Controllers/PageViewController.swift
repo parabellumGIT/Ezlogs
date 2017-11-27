@@ -17,9 +17,7 @@ class PageViewController: UIPageViewController, PagingControlDelegate {
                 self.VCInstance(name:"ThirdTableViewController")]
     }()
     
-    func didSelectTab(index: Int) {
-        currentIndex = index
-    }
+    
     weak var pagingDelegate:PageViewControllerDelegate?
     
     var currentIndex:Int {
@@ -44,8 +42,10 @@ class PageViewController: UIPageViewController, PagingControlDelegate {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:name)
         
     }
-    
-   
+    //MARK: Delegate method
+    func didSelectTab(index: Int) {
+        currentIndex = index
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,22 +59,10 @@ class PageViewController: UIPageViewController, PagingControlDelegate {
         }
         
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-    
-    
-    
+  
 }
 extension PageViewController:UIPageViewControllerDataSource,UIPageViewControllerDelegate{
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        
-
-        
         let previousIndex = currentIndex - 1
         guard  previousIndex >= 0  else {
             return nil

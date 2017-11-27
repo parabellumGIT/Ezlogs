@@ -19,10 +19,9 @@ protocol PagingControlDelegate:AnyObject {
     
     //MARK:Properties
     weak var delegate:PagingControlDelegate?
-    
     var labels = ["Все записи","Лучшее","Прямой Эфир"]
     private var tabButtons = [UIButton]()
-    var selectedTab = 0{
+    private var selectedTab = 0{
         didSet{
             updateButtonSelectionStates()
         }
