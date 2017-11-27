@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C88377F1FCC55F90077849A /* PagingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB8AA411FCC357100D1F038 /* PagingControl.swift */; };
+		5C8837811FCC59D10077849A /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8837801FCC59D10077849A /* PageViewController.swift */; };
+		5C8837831FCC616D0077849A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8837821FCC616D0077849A /* TableViewController.swift */; };
+		5C8837851FCC61F00077849A /* BasicTableDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8837841FCC61F00077849A /* BasicTableDataModel.swift */; };
+		5C8837871FCC62C30077849A /* LatinTableDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8837861FCC62C30077849A /* LatinTableDataModel.swift */; };
+		5C8837891FCC656E0077849A /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8837881FCC656E0077849A /* BasicTableViewCell.swift */; };
 		5CB8AA2C1FCC13ED00D1F038 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB8AA2B1FCC13ED00D1F038 /* AppDelegate.swift */; };
-		5CB8AA2E1FCC13ED00D1F038 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB8AA2D1FCC13ED00D1F038 /* ViewController.swift */; };
 		5CB8AA311FCC13ED00D1F038 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB8AA2F1FCC13ED00D1F038 /* Main.storyboard */; };
 		5CB8AA331FCC13ED00D1F038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB8AA321FCC13ED00D1F038 /* Assets.xcassets */; };
 		5CB8AA361FCC13ED00D1F038 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB8AA341FCC13ED00D1F038 /* LaunchScreen.storyboard */; };
+		5CB8AA3E1FCC281500D1F038 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB8AA3D1FCC281500D1F038 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C8837801FCC59D10077849A /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		5C8837821FCC616D0077849A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		5C8837841FCC61F00077849A /* BasicTableDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableDataModel.swift; sourceTree = "<group>"; };
+		5C8837861FCC62C30077849A /* LatinTableDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatinTableDataModel.swift; sourceTree = "<group>"; };
+		5C8837881FCC656E0077849A /* BasicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableViewCell.swift; sourceTree = "<group>"; };
 		5CB8AA281FCC13ED00D1F038 /* YBTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YBTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB8AA2B1FCC13ED00D1F038 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5CB8AA2D1FCC13ED00D1F038 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5CB8AA301FCC13ED00D1F038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5CB8AA321FCC13ED00D1F038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CB8AA351FCC13ED00D1F038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CB8AA371FCC13ED00D1F038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CB8AA3D1FCC281500D1F038 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5CB8AA411FCC357100D1F038 /* PagingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +66,15 @@
 		5CB8AA2A1FCC13ED00D1F038 /* YBTest */ = {
 			isa = PBXGroup;
 			children = (
+				5CB8AA411FCC357100D1F038 /* PagingControl.swift */,
 				5CB8AA2B1FCC13ED00D1F038 /* AppDelegate.swift */,
-				5CB8AA2D1FCC13ED00D1F038 /* ViewController.swift */,
 				5CB8AA2F1FCC13ED00D1F038 /* Main.storyboard */,
+				5CB8AA3D1FCC281500D1F038 /* MainViewController.swift */,
+				5C8837801FCC59D10077849A /* PageViewController.swift */,
+				5C8837861FCC62C30077849A /* LatinTableDataModel.swift */,
+				5C8837841FCC61F00077849A /* BasicTableDataModel.swift */,
+				5C8837821FCC616D0077849A /* TableViewController.swift */,
+				5C8837881FCC656E0077849A /* BasicTableViewCell.swift */,
 				5CB8AA321FCC13ED00D1F038 /* Assets.xcassets */,
 				5CB8AA341FCC13ED00D1F038 /* LaunchScreen.storyboard */,
 				5CB8AA371FCC13ED00D1F038 /* Info.plist */,
@@ -136,8 +154,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CB8AA2E1FCC13ED00D1F038 /* ViewController.swift in Sources */,
+				5C8837891FCC656E0077849A /* BasicTableViewCell.swift in Sources */,
 				5CB8AA2C1FCC13ED00D1F038 /* AppDelegate.swift in Sources */,
+				5C8837851FCC61F00077849A /* BasicTableDataModel.swift in Sources */,
+				5C88377F1FCC55F90077849A /* PagingControl.swift in Sources */,
+				5C8837871FCC62C30077849A /* LatinTableDataModel.swift in Sources */,
+				5CB8AA3E1FCC281500D1F038 /* MainViewController.swift in Sources */,
+				5C8837831FCC616D0077849A /* TableViewController.swift in Sources */,
+				5C8837811FCC59D10077849A /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
