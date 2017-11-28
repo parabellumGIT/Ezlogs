@@ -77,8 +77,6 @@ protocol PagingControlDelegate:AnyObject {
             button.backgroundColor = UIColor.white
             button.titleLabel?.font = UIFont.systemFont(ofSize: 12)
             button.translatesAutoresizingMaskIntoConstraints = false
-            button.heightAnchor.constraint(equalToConstant: buttonSize.height ).isActive = true
-            button.widthAnchor.constraint(equalToConstant: buttonSize.width).isActive = true
             button.addTarget(self, action: #selector(PagingControl.tabButtonTapped(button:)), for: .touchUpInside)
             addArrangedSubview(button)
             button.sizeToFit()
@@ -122,7 +120,7 @@ protocol PagingControlDelegate:AnyObject {
             if button.isSelected{
                 //Border
                 self.layoutSubviews()
-                border.frame = CGRect(x: 0, y: (button.layer.bounds.size.height), width: (button.layer.frame.size.width), height: 2)
+                border.frame = CGRect(x: 0, y: (button.layer.bounds.size.height) + 5, width: (button.layer.frame.size.width), height: 2)
                 border.backgroundColor = UIColor.blue.cgColor
                 let dissapear = CABasicAnimation(keyPath: "transform.scale")
                 dissapear.fromValue = 0
